@@ -4,11 +4,7 @@ import { Button, List, Select } from "antd";
 import FormItem from "antd/lib/form/FormItem";
 import Text from "antd/lib/typography/Text";
 import { useEffect, useState } from "react";
-import {
-  Control,
-  Controller,
-  UseFormSetValue,
-} from "react-hook-form";
+import { Control, Controller, UseFormSetValue } from "react-hook-form";
 const { Option } = Select;
 
 const ProductsSelect = ({
@@ -33,6 +29,7 @@ const ProductsSelect = ({
         : [];
 
     setValue("order_item_data", orderItems);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedProducts]);
 
   return (
@@ -61,7 +58,7 @@ const ProductsSelect = ({
                   )
                 ) {
                   return (
-                    <Option value={JSON.stringify(product)}>
+                    <Option key={product?.id} value={JSON.stringify(product)}>
                       {product?.attributes?.sku} - {product?.attributes?.name}
                     </Option>
                   );

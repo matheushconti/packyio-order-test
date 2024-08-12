@@ -44,7 +44,7 @@ const CustomersSelect = ({
               );
 
               return (
-                <Option value={customer?.id}>
+                <Option key={customer?.id} value={customer?.id}>
                   {customer_info?.attributes?.name}
                 </Option>
               );
