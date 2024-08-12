@@ -16,6 +16,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+- Vercel integration:
+[https://packyio-order-test.vercel.app/](https://packyio-order-test.vercel.app/)
+
 ## Testing Proposal
 
 Front-End Engineer Tech Exercise: Building a WMS API with React and Server-Side Rendering
