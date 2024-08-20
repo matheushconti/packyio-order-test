@@ -23,6 +23,7 @@ const CustomersSelect = ({
         )
       }
     >
+      <input type="hidden" name="loading" value={loading.toString()} />
       <Controller
         name="customer"
         defaultValue=""
